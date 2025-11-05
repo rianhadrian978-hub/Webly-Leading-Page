@@ -8,7 +8,29 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .brand-gradient { background: linear-gradient(90deg,#1E3A8A 0%, #2563EB 60%, #F97316 100%); }
-    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); }
+    .mockup-screen {
+      border: 2px solid #e5e7eb;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      height: 180px;
+    }
+    .mockup-header {
+      height: 36px;
+      background: #f1f5f9;
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      padding: 0 8px;
+    }
+    .mockup-header span {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+    }
+    .mockup-body { flex: 1; overflow: hidden; }
+    .mockup-body img { width: 100%; height: 100%; object-fit: cover; }
   </style>
 </head>
 <body class="bg-gray-50 text-slate-800 antialiased">
@@ -89,33 +111,89 @@
     </div>
   </section>
 
-  <!-- Portfolio -->
+  <!-- Portfolio (with mockup) -->
   <section id="portfolio" class="py-12 bg-slate-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
       <h2 class="text-2xl font-bold mb-2">Portofolio Kami</h2>
       <p class="text-slate-600 text-sm sm:text-base mb-6">Beberapa contoh situs web klien lokal dari berbagai bidang.</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <article class="bg-white rounded-lg shadow overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1523475496153-3d6ccf46b3f6?q=80&w=800&auto=format&fit=crop" alt="Toko Kopi" class="w-full h-40 sm:h-48 object-cover">
-          <div class="p-4">
-            <h4 class="font-semibold">Toko Kopi Pare</h4>
-            <p class="text-sm text-slate-500 mt-2">Landing page dengan menu & lokasi interaktif.</p>
+
+        <!-- Toko Kopi -->
+        <article class="bg-white rounded-lg shadow overflow-hidden p-4">
+          <div class="mockup-screen mb-3">
+            <div class="mockup-header"><span style="background:#ef4444"></span><span style="background:#facc15"></span><span style="background:#22c55e"></span></div>
+            <div class="mockup-body">
+              <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800&auto=format&fit=crop" alt="Website Toko Kopi">
+            </div>
           </div>
+          <h4 class="font-semibold text-lg">Toko Kopi Pare</h4>
+          <p class="text-sm text-slate-500 mt-2">Landing page menampilkan foto produk, menu kopi, dan peta lokasi interaktif.</p>
         </article>
-        <article class="bg-white rounded-lg shadow overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1579154203451-1f4d0f0b6b2b?q=80&w=800&auto=format&fit=crop" alt="Klinik" class="w-full h-40 sm:h-48 object-cover">
-          <div class="p-4">
-            <h4 class="font-semibold">Klinik Sehat</h4>
-            <p class="text-sm text-slate-500 mt-2">Profil dokter & jadwal praktek dinamis.</p>
+
+        <!-- Klinik -->
+        <article class="bg-white rounded-lg shadow overflow-hidden p-4">
+          <div class="mockup-screen mb-3">
+            <div class="mockup-header"><span style="background:#ef4444"></span><span style="background:#facc15"></span><span style="background:#22c55e"></span></div>
+            <div class="mockup-body">
+              <img src="https://images.unsplash.com/photo-1580281657521-4a1d3b0ee5f5?q=80&w=800&auto=format&fit=crop" alt="Website Klinik Sehat">
+            </div>
           </div>
+          <h4 class="font-semibold text-lg">Klinik Sehat</h4>
+          <p class="text-sm text-slate-500 mt-2">Website profesional untuk dokter & klinik, berisi jadwal praktek dan form konsultasi.</p>
         </article>
-        <article class="bg-white rounded-lg shadow overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1556742502-ec7c0e9f5f1e?q=80&w=800&auto=format&fit=crop" alt="Kantor Hukum" class="w-full h-40 sm:h-48 object-cover">
-          <div class="p-4">
-            <h4 class="font-semibold">Kantor Hukum Prima</h4>
-            <p class="text-sm text-slate-500 mt-2">Website profil hukum dengan testimoni.</p>
+
+        <!-- Kantor Hukum -->
+        <article class="bg-white rounded-lg shadow overflow-hidden p-4">
+          <div class="mockup-screen mb-3">
+            <div class="mockup-header"><span style="background:#ef4444"></span><span style="background:#facc15"></span><span style="background:#22c55e"></span></div>
+            <div class="mockup-body">
+              <img src="https://images.unsplash.com/photo-1573497161139-7c1e7e9a6945?q=80&w=800&auto=format&fit=crop" alt="Website Kantor Hukum">
+            </div>
           </div>
+          <h4 class="font-semibold text-lg">Kantor Hukum Prima</h4>
+          <p class="text-sm text-slate-500 mt-2">Situs hukum dengan profil pengacara, layanan hukum, dan testimoni klien.</p>
         </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-12 bg-gradient-to-tr from-white to-slate-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold">Pilih Paket Anda</h2>
+      <p class="text-slate-600 mt-2">Paket jelas, harga transparan, tanpa biaya tersembunyi.</p>
+      <div class="mt-6 inline-grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto">
+        <div class="p-6 bg-white rounded-lg shadow">
+          <div class="text-sm text-slate-500">Starter</div>
+          <div class="text-2xl font-bold mt-2">Rp1.000.000</div>
+          <ul class="mt-4 text-sm text-slate-600 text-left">
+            <li>- 1 Halaman Landing</li>
+            <li>- Form Kontak & WA</li>
+            <li>- Responsive</li>
+          </ul>
+          <a class="mt-6 inline-block px-4 py-2 rounded bg-orange-500 text-white" href="#contact">Pilih</a>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <div class="text-sm text-slate-500">Pro</div>
+          <div class="text-2xl font-bold mt-2">Rp2.500.000</div>
+          <ul class="mt-4 text-sm text-slate-600 text-left">
+            <li>- 3–5 Halaman</li>
+            <li>- Domain + Hosting</li>
+            <li>- SEO Dasar</li>
+          </ul>
+          <a class="mt-6 inline-block px-4 py-2 rounded bg-orange-500 text-white" href="#contact">Pilih</a>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <div class="text-sm text-slate-500">Business</div>
+          <div class="text-2xl font-bold mt-2">Rp4.500.000</div>
+          <ul class="mt-4 text-sm text-slate-600 text-left">
+            <li>- Multi Halaman</li>
+            <li>- 3 Revisi</li>
+            <li>- Maintenance Opsional</li>
+          </ul>
+          <a class="mt-6 inline-block px-4 py-2 rounded bg-orange-500 text-white" href="#contact">Pilih</a>
+        </div>
       </div>
     </div>
   </section>
