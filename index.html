@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WEBLY — Jasa pembuatan website profil sederhana, profesional, dan ekonomis untuk UKM dan profesional di Parepare." />
+  <title>WEBLY — Website Profesional untuk UKM & Profesional Lokal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small custom styles to complement Tailwind */
+    .brand-gradient { background: linear-gradient(90deg,#1E3A8A 0%, #2563EB 60%, #F97316 100%); }
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); }
+  </style>
+</head>
+<body class="bg-gray-50 text-slate-800 antialiased">
+  <!-- Header -->
+  <header class="bg-white/60 backdrop-blur sticky top-0 z-30 shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a class="flex items-center gap-3" href="#">
+        <div class="w-10 h-10 rounded-lg brand-gradient flex items-center justify-center text-white font-bold">W</div>
+        <div>
+          <div class="text-lg font-semibold">WEBLY</div>
+          <div class="text-xs text-slate-500 -mt-1">Bangun Citra Profesionalmu</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex gap-6 items-center text-sm">
+        <a href="#services" class="hover:underline">Layanan</a>
+        <a href="#portfolio" class="hover:underline">Portofolio</a>
+        <a href="#pricing" class="hover:underline">Paket & Harga</a>
+        <a href="#contact" class="hover:underline">Kontak</a>
+      </nav>
+      <div class="hidden md:block">
+        <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-orange-500 text-white text-sm font-medium shadow">Pesan Sekarang</a>
+      </div>
+      <button class="md:hidden p-2 rounded-md" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden px-6 pb-4">
+      <a class="block py-2" href="#services">Layanan</a>
+      <a class="block py-2" href="#portfolio">Portofolio</a>
+      <a class="block py-2" href="#pricing">Paket & Harga</a>
+      <a class="block py-2" href="#contact">Kontak</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-12 pb-16">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">Website profil profesional, fungsional, dan ekonomis untuk UKM & profesional di Parepare</h1>
+        <p class="mt-4 text-slate-600">Buat brosur digital atau kartu nama online yang meningkatkan kredibilitas dan visibilitas bisnis Anda — cepat, rapi, dan mudah di-manage.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#contact" class="px-5 py-3 rounded-md bg-orange-500 text-white font-semibold shadow">Buat Website Sekarang</a>
+          <a href="#portfolio" class="px-5 py-3 rounded-md border border-slate-200 text-slate-700">Lihat Portofolio</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-3 gap-3 text-sm text-center">
+          <div class="p-4 bg-white rounded-lg shadow-sm">
+            <div class="font-semibold">Mulai Rp1.000.000</div>
+            <div class="text-slate-500">Landing page / profil</div>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow-sm">
+            <div class="font-semibold">CMS</div>
+            <div class="text-slate-500">WordPress mudah kelola</div>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow-sm">
+            <div class="font-semibold">Support</div>
+            <div class="text-slate-500">Dukungan setelah peluncuran</div>
+          </div>
+        </div>
+      </div>
+      <div class="order-first md:order-last">
+        <div class="rounded-2xl overflow-hidden shadow-lg">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="mockup" class="w-full h-64 object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-12 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold">Layanan Kami</h2>
+      <p class="text-slate-600 mt-2">Paket yang dirancang untuk UKM dan profesional lokal — cepat online tanpa ribet.</p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-lg glass">
+          <h3 class="font-semibold">Starter</h3>
+          <p class="text-sm text-slate-500 mt-2">1 halaman (landing), domain sub, optimasi dasar, 1 hari kerja.</p>
+          <div class="mt-4 font-bold">Rp1.000.000</div>
+        </div>
+        <div class="p-6 rounded-lg glass">
+          <h3 class="font-semibold">Pro</h3>
+          <p class="text-sm text-slate-500 mt-2">3–5 halaman, domain + hosting 1 tahun, form kontak, integrasi WA.</p>
+          <div class="mt-4 font-bold">Rp2.500.000</div>
+        </div>
+        <div class="p-6 rounded-lg glass">
+          <h3 class="font-semibold">Business</h3>
+          <p class="text-sm text-slate-500 mt-2">Multi-halaman, galeri, SEO dasar, 3 revisi, maintenance opsional.</p>
+          <div class="mt-4 font-bold">Rp4.500.000</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold">Contoh Website (Portofolio)</h2>
+      <p class="text-slate-600 mt-2">Mockup contoh untuk klien lokal—toko, klinik, kantor hukum, dan notaris.</p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1523475496153-3d6ccf46b3f6?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Toko Kopi" class="w-full h-44 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">Toko Kopi "Kopi Pare"</h4>
+            <p class="text-sm text-slate-500 mt-2">Landing page dengan menu, lokasi, dan form pemesanan.</p>
+            <div class="mt-4 flex gap-2">
+              <a class="text-xs py-2 px-3 rounded bg-slate-100">Demo</a>
+              <a class="text-xs py-2 px-3 rounded bg-slate-100">Case Study</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1579154203451-1f4d0f0b6b2b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Klinik" class="w-full h-44 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">Klinik Sehat</h4>
+            <p class="text-sm text-slate-500 mt-2">Profil dokter, jadwal praktek, dan kontak cepat (WA).</p>
+            <div class="mt-4 flex gap-2">
+              <a class="text-xs py-2 px-3 rounded bg-slate-100">Demo</a>
+              <a class="text-xs py-2 px-3 rounded bg-slate-100">Case Study</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1556742502-ec7c0e9f5f1e?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Kantor Hukum" class="w-full h-44 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">Kantor Hukum Prima</h4>
+            <p class="text-sm text-slate-500 mt-2">Profil pengacara, layanan, dan testimoni klien.</p>
+            <div class="mt-4 flex gap-2">
+              <a class="text-xs py-2 px-3 rounded bg-slate-100">Demo</a>
+              <a class="text-xs py-2 px-3 rounded bg-slate-100">Case Study</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing / CTA -->
+  <section id="pricing" class="py-12 bg-gradient-to-tr from-white to-slate-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold">Pilih Paket Anda</h2>
+      <p class="text-slate-600 mt-2">Paket jelas, harga transparan, tanpa biaya tersembunyi.</p>
+      <div class="mt-6 inline-grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto">
+        <div class="p-6 bg-white rounded-lg shadow">
+          <div class="text-sm text-slate-500">Starter</div>
+          <div class="text-2xl font-bold mt-2">Rp1.000.000</div>
+          <ul class="mt-4 text-sm text-slate-600 text-left">
+            <li>- 1 Halaman Landing</li>
+            <li>- Form Kontak & WA</li>
+            <li>- Responsive</li>
+          </ul>
+          <a class="mt-6 inline-block px-4 py-2 rounded bg-orange-500 text-white" href="#contact">Pilih</a>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <div class="text-sm text-slate-500">Pro</div>
+          <div class="text-2xl font-bold mt-2">Rp2.500.000</div>
+          <ul class="mt-4 text-sm text-slate-600 text-left">
+            <li>- 3–5 Halaman</li>
+            <li>- Domain + Hosting</li>
+            <li>- SEO Dasar</li>
+          </ul>
+          <a class="mt-6 inline-block px-4 py-2 rounded bg-orange-500 text-white" href="#contact">Pilih</a>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <div class="text-sm text-slate-500">Business</div>
+          <div class="text-2xl font-bold mt-2">Rp4.500.000</div>
+          <ul class="mt-4 text-sm text-slate-600 text-left">
+            <li>- Multi Halaman</li>
+            <li>- 3 Revisi</li>
+            <li>- Maintenance Opsional</li>
+          </ul>
+          <a class="mt-6 inline-block px-4 py-2 rounded bg-orange-500 text-white" href="#contact">Pilih</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12">
+    <div class="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <div>
+        <h3 class="text-xl font-bold">Hubungi Kami</h3>
+        <p class="text-slate-600 mt-2">Konsultasi gratis & cek kebutuhan website Anda. Kami melayani Parepare dan sekitarnya.</p>
+        <div class="mt-6 space-y-3 text-sm">
+          <div class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m0 4v12"/></svg>Parepare, Sulawesi Selatan</div>
+          <div class="flex items-center gap-3"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2M7 8H5a2 2 0 00-2 2v6a2 2 0 002 2h2m10-10V6a2 2 0 00-2-2h-2M7 8V6a2 2 0 012-2h2"/></svg>WhatsApp: <a href="https://wa.me/6281xxxxxxxxx" class="text-blue-600">+62 812-xxxx-xxxx</a></div>
+          <div class="flex items-center gap-3">Email: <a href="mailto:info@webly.local" class="text-blue-600">info@webly.local</a></div>
+        </div>
+      </div>
+      <form class="bg-white p-6 rounded-lg shadow" onsubmit="event.preventDefault(); alert('Terima kasih! Kami akan menghubungi Anda via WhatsApp.');">
+        <label class="block text-sm">Nama</label>
+        <input class="w-full mt-2 p-2 border rounded" required />
+        <label class="block text-sm mt-4">Email / WA</label>
+        <input class="w-full mt-2 p-2 border rounded" required />
+        <label class="block text-sm mt-4">Pesan / Kebutuhan</label>
+        <textarea class="w-full mt-2 p-2 border rounded" rows="4"></textarea>
+        <div class="mt-4 flex gap-2">
+          <button class="px-4 py-2 rounded bg-orange-500 text-white">Kirim</button>
+          <a href="https://wa.me/6281xxxxxxxxx" target="_blank" class="px-4 py-2 rounded border">Chat via WhatsApp</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg brand-gradient flex items-center justify-center text-white font-bold">W</div>
+        <div>
+          <div class="font-semibold">WEBLY</div>
+          <div class="text-xs text-slate-300">Jasa Pembuatan Website Profil - Parepare</div>
+        </div>
+      </div>
+      <div class="text-sm text-slate-400">© WEBLY 2025 — Semua hak dilindungi</div>
+    </div>
+  </footer>
+
+</body>
+</html>
